@@ -43,13 +43,55 @@
 
 
 // Задача 40. напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
-System.Console.WriteLine("Введите число A: ");
-int numA = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число B: ");
-int numB = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите C: ");
-int numC = Convert.ToInt32(Console.ReadLine());
-if (numA < numB+numC || numB < numA+numC || numB < numA + numC)
-    System.Console.WriteLine("Да");
-else 
-    System.Console.WriteLine("Нет");    
+// System.Console.WriteLine("Введите число A: ");
+// int numA = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите число B: ");
+// int numB = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введите C: ");
+// int numC = Convert.ToInt32(Console.ReadLine());
+// if (numA < numB + numC && numB < numA + numC && numC < numA + numB)
+//     System.Console.WriteLine("Да");
+// else 
+//     System.Console.WriteLine("Нет");  
+
+// bool Res(double x, double y, double z)
+// {
+//     bool flag = false;
+//     if (x < z + y && z < x + y && y < z + x)
+//     {
+//         flag = true;
+//     }
+//     return flag;
+// }
+// System.Console.WriteLine("Введите последовательно три числа: ");
+// double x = Convert.ToDouble(Console.ReadLine());
+// double y = Convert.ToDouble(Console.ReadLine());
+// double z = Convert.ToDouble(Console.ReadLine());
+
+// if (Res(x, y, z))
+// {
+//     System.Console.WriteLine("Построить можно");
+// }
+// else
+//     System.Console.WriteLine("Нельзя");
+
+// Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+// 45 -> 101101
+// 3  -> 11
+// 2  -> 10;
+
+// string Res(int N)
+// {
+//     string res = "";
+//     while (N > 0)
+//     {
+//         res = Convert.ToString(N % 2) + res;
+//         N = N / 2;
+//     }
+//     return res;
+// }
+// System.Console.WriteLine("Введите двоичное число: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+
+// System.Console.WriteLine(Res(N));
+
