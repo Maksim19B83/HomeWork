@@ -1,17 +1,18 @@
 ﻿// Напишите программу, которая на вход принимает число и выводит его квадрат.
-// Console.WriteLine("Введите целое число");
+// 
+// int result=nConsole.WriteLine("Введите целое число");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int result=num*num;
+// result = num*num;
 // System.Console.WriteLine("Квадрат введенного числа равен "+result);
 
 // if (num>0)
 // {
-//     System.Console.WriteLine("Вы ввели положительное число");
+//      System.Console.WriteLine("Вы ввели положительное число");
 // }
 // else if (num==0)
-//     System.Console.WriteLine("Вы ввели ноль");
+//      System.Console.WriteLine("Вы ввели ноль");
 // else
-//     System.Console.WriteLine("Вы ввели отрицательное число");
+//      System.Console.WriteLine("Вы ввели отрицательное число");
 
 // // Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
 // Console.WriteLine("Введите число А: ");
