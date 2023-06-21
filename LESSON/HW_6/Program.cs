@@ -95,3 +95,111 @@
 
 // System.Console.WriteLine(Res(N));
 
+// Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+// Если N = 5 -> 0 1 1 2 3
+// Если N = 3 -> 0 1 1
+// Если N = 7 -> 0 1 1 2 3 5 8
+
+// void FillArray(int[] arr)
+// {
+//     arr[0] = 0;
+//     arr[1] = 1;
+//     arr[2] = 1;
+//     for (int i = 3; i < arr.Length; i++)
+//     {
+//         arr[i] = (arr[i-1])+(arr[i-2]);
+//     }
+// }
+
+// void PrintArray(int[] array)
+// {
+//     foreach (var item in array)
+//     {
+//         Console.Write($"{item} ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// Console.Clear();
+// System.Console.WriteLine("Введите количество чисел Фибоначчи, которое хотите увидеть");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[size];
+// FillArray(array);
+// PrintArray(array);
+
+// Задача НЕГАФИБОНАЧЧИ. Задайте число. Составьте массив чисел НегаФибоначчи, в том числе для отрицательных индексов.
+// Пример:
+// для k = 9 массив будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+// // void FillArray(int[] arr) НЕ ДОДЕЛАЛ!!!
+// {
+//      arr[0] = 0;
+//      arr[1] = 1;
+//      arr[2] = 1;
+//      for (int i = 3; i < arr.Length; i++)
+//      {
+//          arr[i] = (arr[i-1])+(arr[i-2]);
+//      }
+// }
+
+// void PrintArray(int[] array)
+// {
+//      foreach (var item in array)
+//      {
+//          Console.Write($"{item} ");
+//      }
+//      System.Console.WriteLine();
+// }
+
+// void NegativNumbers(int[] array)
+// {
+//      for (int i=0; i < array.Length/2; i++)
+//      {
+//      (array[array.Length-1-i], array[i] ) = (-array[i], -array[array.Length-1-i]);
+//      }
+// }
+
+// System.Console.WriteLine("Введите количество чисел Фибоначчи, которое хотите увидеть");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[size];
+// FillArray(array);
+// PrintArray(array);
+// NegativNumbers(array);
+// PrintArray(array);
+
+
+void FillArray(int[] arr) 
+{
+      for (int i = 0; i < arr.Length; i++)
+      {
+          arr[i] = new Random().Next(-9,10);;
+      }
+}
+
+void PrintArray(int[] array)
+{
+      foreach (var item in array)
+      {
+          Console.Write($"{item} ");
+      }
+      System.Console.WriteLine();
+}
+
+int PositivNumbers(int[] array) 
+{
+    int temp=0;
+    foreach (var item in array)
+        if (item>0)
+            temp++;
+        else
+            temp=temp+0;
+    int[] result = {temp};   
+    return result;                
+}
+System.Console.WriteLine("Введите размер массива:");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[size];
+FillArray(array);
+PrintArray(array);
+PositivNumbers(array);
+PrintArray(array);
